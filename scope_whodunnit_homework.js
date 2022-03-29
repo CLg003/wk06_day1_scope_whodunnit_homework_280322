@@ -155,7 +155,7 @@ changeMurderer();
 const verdict = declareMurderer();
 console.log(verdict);
 
-// console.log(verdict) will produce "The murderer is Miss Scarlet."" - correction: murderer is Mr Green as let reassignment doesn't hold outwith the plotTwist and unexpectedOutcome functions.
+// console.log(verdict) will produce "The murderer is Miss Scarlet."" - correction: murderer is Mr Green as let reassignment doesn't hold outwith the plotTwist and unexpectedOutcome functions - they don't return anything so nothing changes in any other scope.
 // Reason: The changeMurderer (and within it the plotTwist and unexpectedOutcome functions, both called) is called prior to the declareMurderer function being called so the murderer has been reassigned to Miss Scarlet.
 
 
